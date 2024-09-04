@@ -3,42 +3,39 @@
   <defs>
     <style>
       .cls-1 {
-        <!-- fill: url(#linear-gradient); -->
+        fill: url(#linear-gradient);
       }
 
-      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-8 {
-        stroke-width: 2px;
-        stroke: #fff;
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        stroke-width: 0px;
       }
 
       .cls-2 {
-        <!-- fill: url(#linear-gradient-6); -->
+        fill: url(#linear-gradient-6);
       }
 
       .cls-3 {
-        <!-- fill: url(#linear-gradient-5); -->
+        fill: url(#linear-gradient-5);
       }
 
       .cls-4 {
-        <!-- fill: url(#linear-gradient-2); -->
+        fill: url(#linear-gradient-2);
       }
 
       .cls-5 {
-        <!-- fill: url(#linear-gradient-7); -->
+        fill: url(#linear-gradient-7);
       }
 
       .cls-6 {
-        <!-- fill: url(#linear-gradient-3); -->
+        fill: url(#linear-gradient-3);
       }
 
       .cls-7 {
-        fill: #000;
-        stroke-width:3px;
-        stroke: #fff;
+        fill: #fff;
       }
 
       .cls-8 {
-        <!-- fill: url(#linear-gradient-4); -->
+        fill: url(#linear-gradient-4);
       }
     </style>
     <linearGradient id="linear-gradient" x1="255.24" y1="73.29" x2="317.1" y2="73.29" gradientUnits="userSpaceOnUse">
