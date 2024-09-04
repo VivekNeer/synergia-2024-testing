@@ -6,7 +6,3 @@
   @apply bg-black text-white;
   font-family: "Rubik Variable", sans-serif;
 }
-
-h1 {
-  @apply text-xl text-zinc-400;
-}

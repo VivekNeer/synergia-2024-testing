@@ -1,6 +1,7 @@
 import anime from "animejs";
 import { Fragment, useEffect, useRef, useState } from "react";
 import LogoSVG from "../assets/Logo.svg";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Logo() {
   const pathsRef = useRef([]);
@@ -12,7 +13,7 @@ export default function Logo() {
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: "easeInOutSine",
       duration: 700,
-      delay: anime.stagger(10),
+      delay: anime.stagger(50),
       complete: () => {
         setFadeIn(true);
       },
@@ -21,18 +22,18 @@ export default function Logo() {
 
   return (
     <Fragment>
-      <img
+      <motion.img
         src={LogoSVG}
-        className={`absolute transition-opacity duration-500 w-4/5 max-w-lg ${
+        className={`absolute transition-opacity duration-1000 w-3/5 max-w-md select-none -mt-16 ${
           fadeIn ? "opacity-100" : "opacity-0"
         }`}
       />
-      <svg
+      <motion.svg
         id="Layer_2"
         data-name="Layer 2"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 352.01 217.72"
-        className={`absolute transition-opacity duration-500 w-4/5 max-w-lg ${
+        className={`absolute transition-opacity duration-1000 w-3/5 max-w-md select-none -mt-16 ${
           fadeIn ? "opacity-0" : "opacity-100"
         }`}
       >
@@ -240,7 +241,7 @@ export default function Logo() {
             />
           </g>
         </g>
-      </svg>
+      </motion.svg>
     </Fragment>
   );
 }
